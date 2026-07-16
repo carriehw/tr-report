@@ -108,8 +108,8 @@ sup.ref a:hover{color:var(--navy);opacity:1}
 .tl .d{font-size:11.5px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
 .tl .b{font-weight:700;color:var(--navy);font-size:15.5px}
 .tl p{font-size:14px;margin-top:2px}
-.tl p.sw{font-size:13px;color:var(--muted);margin-top:4px}
-.tl p.sw::before{content:"→ ";color:var(--navy-2)}
+.tl p.sw,.ir-grid p.sw{font-size:13px;color:var(--muted);margin-top:4px}
+.tl p.sw::before,.ir-grid p.sw::before{content:"→ ";color:var(--navy-2)}
 /* market grid (§1 恆常版式) */
 .mkt-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:26px 0}
 .kpi.mkt{padding:16px 14px 13px}
@@ -676,6 +676,46 @@ a.srclink svg{width:11px;height:11px;flex:none}
     <div class="sowhat" data-industry="beauty"><b class="tag" data-i18n="sw.tag.beauty">策略啟示 · 美妝</b><span data-i18n="s3.swb">產品雙軌：家庭裝／多件優惠承接親子客，小規格、具打卡屬性的即興SKU承接Z世代。門店開旅行妝容課、調香工作坊，把購物變成行程一站——停留時間就是客單價。</span></div>
     <div class="sowhat" data-industry="hotel"><b class="tag" data-i18n="sw.tag.hotel">策略啟示 · 酒店</b><span data-i18n="s3.swh">產品三路並行：親子房＋研學套票、綁定演出日曆的Z世代檔期定價、適老配置的定制小團。適老硬件（防滑、緊急呼叫、低樓層）轉化率高出58%，是可直接收溢價的投資。</span></div>
     <div class="sowhat" data-industry="ws"><b class="tag" data-i18n="sw.tag.ws">策略啟示 · 烈酒</b><span data-i18n="s3.sww">送禮場景鎖定家庭客與銀髮客，養生、珍藏敘事同樣適用酒類禮盒；輕量便攜及城市限定瓶迎合Z世代即興、可打卡的購買決策。</span></div>
+
+    <h3 class="serif" style="font-size:20px;margin:34px 0 8px"><span data-industry="beauty" data-i18n="s3.ir.h.beauty">美妝消費研究</span><span data-industry="hotel" data-i18n="s3.ir.h.hotel">住宿消費研究</span><span data-industry="ws" data-i18n="s3.ir.h.ws">酒類消費研究</span></h3>
+    <div class="card-grid ir-grid">
+      <div class="pcard" data-industry="beauty">
+        <h3 data-i18n="s3.irb1h">美妝穩居免稅首選，社媒直接驅動機場轉化</h3>
+        <div class="big">62.1%</div>
+        <p><span data-i18n="s3.irb1t">62.1%的內地出境旅客擬購買美妝，居免稅品類之首；68.3%在社媒看到推廣後會於機場購買；98%至少間中與電商比價、78%重視店員協助——未購買主因是缺貨（62.6%）與價格（55.3%）。</span><sup class="ref"><a href="#r73">[73]</a></sup></p>
+        <p class="sw"><span data-i18n="s3.irb1s">種草—轉化路徑清晰：小紅書負責研究、機場負責成交，決勝點是現貨與即場價格證明，而非購買意欲。</span></p>
+      </div>
+      <div class="pcard" data-industry="beauty">
+        <h3 data-i18n="s3.irb2h">TREX獨家品買家是美妝購買主力</h3>
+        <div class="big">74%</div>
+        <p><span data-i18n="s3.irb2t">旅遊零售獨家品（TREX）買家貢獻護膚74%、彩妝67%、香水63%的購買，約75%屬首次購買；此客群更年輕、更富裕，重視獨家與新品多於價格。</span><sup class="ref"><a href="#r74">[74]</a></sup></p>
+        <p class="sw"><span data-i18n="s3.irb2s">獨家／首發SKU是美妝旅遊零售的轉化引擎，直接支撐香港「獨家＋正價信任」的差異化定位。</span></p>
+      </div>
+      <div class="pcard" data-industry="hotel">
+        <h3 data-i18n="s3.irh1h">代際分層：80、90後才是高端房客</h3>
+        <div class="big">76.2%</div>
+        <p><span data-i18n="s3.irh1t">90後偏愛國際中高端品牌（希爾頓、洲際），80後鍾情高端豪華（麗思卡爾頓），00後選經濟型連鎖；選房因素中「床品舒適度」以76.2%居首（有效樣本1,628人）。</span><sup class="ref"><a href="#r75">[75]</a></sup></p>
+        <p class="sw"><span data-i18n="s3.irh1s">高端酒店的目標客是80、90後而非00後；賣點排序應是睡眠體驗先於設計感。</span></p>
+      </div>
+      <div class="pcard" data-industry="hotel">
+        <h3 data-i18n="s3.irh2h">住宿需求向「體驗型」傾斜</h3>
+        <div class="big" data-i18n="s3.irh2v">體驗型</div>
+        <p><span data-i18n="s3.irh2t">「有機農場」「騎馬射箭」「出海捕魚」等體驗型關鍵詞搜索增速領先，「行李托運」「值機選座」等便利型服務同列增長前茅——住宿正由單一房晚升級為一體化服務方案。</span><sup class="ref"><a href="#r76">[76]</a></sup></p>
+        <p class="sw"><span data-i18n="s3.irh2s">房晚以外的「體驗＋便利」加購項才是增量客單來源——親子研學、體驗工作坊都應做成可預訂SKU。</span></p>
+      </div>
+      <div class="pcard" data-industry="ws">
+        <h3 data-i18n="s3.irw1h">買酒動機急轉「自飲」，送禮退居第二</h3>
+        <div class="big up">57%</div>
+        <p><span data-i18n="s3.irw1t">亞太旅客在旅遊零售購買酒類的「自飲」動機由2024年45%升至2025年57%（+12個百分點）；全球免稅購買中自用佔56%、送禮佔23%。</span><sup class="ref"><a href="#r77">[77]</a></sup></p>
+        <p class="sw"><span data-i18n="s3.irw1s">貨盤敘事應由「禮盒優先」轉向「自我獎賞」——小容量、嘗新與品鑑體驗行先，送禮留待七夕、世界盃檔期精準投放。</span></p>
+      </div>
+      <div class="pcard" data-industry="ws">
+        <h3 data-i18n="s3.irw2h">TREX買家吃「發現式」促銷</h3>
+        <div class="big">60%</div>
+        <p><span data-i18n="s3.irw2t">60%的TREX買家會參與促銷（非TREX買家36%），並在酒類等品類產生更大買籃；促銷對他們是發現新品的機會而非減價，約75%入店前已有購買決定。</span><sup class="ref"><a href="#r74">[74]</a></sup></p>
+        <p class="sw"><span data-i18n="s3.irw2s">響12、City Labels等TREX酒款應配品鑑、限定套裝等「發現式」促銷——單純鬥價反而錯位。</span></p>
+      </div>
+    </div>
   </div>
 </section>
 <hr class="divider">
@@ -988,6 +1028,11 @@ a.srclink svg{width:11px;height:11px;flex:none}
       <li id="r70">明報／HK01：鄭秀文啟德演唱會（原定7月10–12日）因舞台部件故障延期，原日期改辦免費答謝會｜2026-07-10｜<a href="https://ol.mingpao.com/ldy/showbiz/latest/20260710/1783657534785/">ol.mingpao.com</a>；<a href="https://www.hk01.com/%E7%9C%BE%E6%A8%82%E8%BF%B7/60367071/">hk01.com</a></li>
       <li id="r71">Global Travel Retail Magazine：資生堂旅遊零售Adele Zhang專訪——體驗主導亞太策略、「旅遊零售已不再只是補貨渠道」、首季海南活動成效｜2026-06-05｜<a href="https://www.gtrmag.com/blog/adele-zhang-outlines-shiseido-travel-retails-experience-led-apac-strategy">gtrmag.com</a></li>
       <li id="r72">文華東方官方新聞稿：香港置地文華東方揭示新篇章——總經理Michael Groll談2026年6月1日重開｜2026-04-01｜<a href="https://press.mandarinoriental.com/landmark-unveils-next-chapter/?lang=eng">press.mandarinoriental.com</a></li>
+      <li id="r73">TRBusiness／DFNI：China Trading Desk《2026年第二季中國出境旅遊情緒調查》——美妝購買意欲62.1%居免稅品類之首、68.3%因社媒推廣而於機場購買、98%與電商比價｜2026-07-06／2026-06-30｜<a href="https://www.trbusiness.com/regional-news/asia-pacific/ctd-survey-highlights-growing-influence-of-social-media-on-chinese-market/280954">trbusiness.com</a>；<a href="https://www.dfnionline.com/comment-insight/social-media-promotions-drive-airport-shopping-intent-among-chinese-travellers-30-06-2026/">dfnionline.com</a></li>
+      <li id="r74">TRBusiness：m1nd-set旅遊零售獨家品（TREX）買家研究——TREX買家貢獻護膚74%、彩妝67%、香水63%購買；60%參與促銷（非TREX買家36%）、更年輕更富裕｜2026-06-25｜<a href="https://www.trbusiness.com/data-analysis/surveys/m1nd-set-shows-trex-shoppers-are-key-catalyst-for-growth-in-gtr/280224">trbusiness.com</a></li>
+      <li id="r75">DT研究院／DT商業觀察《2026青年住酒店調研報告》——代際酒店偏好分層（00後經濟連鎖、90後國際中高端、80後高端豪華）、床品舒適度76.2%居選房因素之首（有效樣本1,628人）｜2026-05-04｜<a href="https://www.163.com/dy/article/KS36KHV905199D2V.html">163.com（DT商業觀察）</a>；<a href="https://www.fxbaogao.com/detail/5420165">fxbaogao.com</a></li>
+      <li id="r76">攜程研究院2026暑期旅遊趨勢報告（新旅界轉載）——「有機農場」「騎馬射箭」「出海捕魚」等體驗型住宿關鍵詞搜索增速領先，住宿升級為一體化服務方案｜2026-07-03｜<a href="https://www.lvjie.co/brand/2026/0703/35146.html">lvjie.co</a></li>
+      <li id="r77">Global Drinks Intel（引m1nd-set數據）：亞太旅客旅遊零售購酒「自飲」動機由2024年45%升至2025年57%；全球免稅自用佔56%、送禮23%｜2026-06-08｜<a href="https://drinks-intel.com/cross-category/who-are-asia-pacific-travellers-buying-alcohol-for-in-global-travel-retail-market-intel/">drinks-intel.com</a></li>
     </ol>
     <div class="foot-meta">
       <div>Travel Retail Market Intelligence · Vol.1 · <span data-i18n="ft.issue">2026年6月號｜2026年7月發佈</span></div>
@@ -1144,6 +1189,25 @@ reg("en",{
 "s3.swb":"Run a dual product track: family bundles/multi-buy offers for family travellers, small photogenic impulse SKUs for Gen Z. Turn stores into itinerary stops with travel-makeup classes and perfume workshops — dwell time is basket size.",
 "s3.swh":"Three product lines in parallel: family rooms + study-tour packages, Gen Z event-calendar pricing, and senior-adapted private small groups. Senior-friendly hardware (anti-slip, emergency call, low floors) converts 58% better — a premium-earning investment.",
 "s3.sww":"Anchor gifting on family and silver travellers — wellness and collectible narratives fit liquor gift boxes too; lightweight travel formats and city-limited bottles suit Gen Z's impulsive, photogenic purchase style.",
+"s3.ir.h.beauty":"Beauty Shopper Research","s3.ir.h.hotel":"Accommodation Consumer Research","s3.ir.h.ws":"Liquor Consumer Research",
+"s3.irb1h":"Beauty leads duty-free intent; social media drives airport conversion",
+"s3.irb1t":"62.1% of Chinese outbound travellers plan to buy beauty — the top duty-free category; 68.3% would buy at the airport after seeing a social-media promotion; 98% at least occasionally compare duty-free prices with e-commerce and 78% value staff assistance. Top non-purchase reasons: unavailability (62.6%) and price (55.3%).",
+"s3.irb1s":"The seeding-to-conversion path is clear: Xiaohongshu does the research, the airport closes the sale — availability and on-the-spot price proof decide the outcome, not intent.",
+"s3.irb2h":"TREX shoppers are the beauty purchase engine",
+"s3.irb2t":"Travel-retail-exclusive (TREX) shoppers account for 74% of skincare, 67% of make-up and 63% of fragrance purchases; around 75% are first-time purchases. This cohort is younger, more affluent, and values exclusivity and newness over price.",
+"s3.irb2s":"Exclusive and first-launch SKUs are the conversion engine of beauty travel retail — direct support for Hong Kong's \"exclusives + full-price trust\" positioning.",
+"s3.irh1h":"Generational split: post-80s/90s are the premium guests",
+"s3.irh1t":"Post-90s favour international upper-midscale brands (Hilton, InterContinental), post-80s prefer upscale luxury (Ritz-Carlton), while post-00s pick budget chains; \"bedding comfort\" tops room-choice factors at 76.2% (n=1,628).",
+"s3.irh1s":"Premium hotels' target guests are the post-80s and post-90s, not post-00s; lead with sleep quality before design.",
+"s3.irh2h":"Accommodation demand tilts experiential","s3.irh2v":"Experiential",
+"s3.irh2t":"Searches for experiential keywords — organic farms, horse-riding and archery, sea fishing — led summer growth, with convenience services (luggage transfer, seat selection) close behind: lodging is upgrading from a room night into an integrated service solution.",
+"s3.irh2s":"Experience and convenience add-ons beyond the room night are the incremental basket — family study tours and workshops should all be bookable SKUs.",
+"s3.irw1h":"Liquor motivation swings to self-consumption; gifting slips to second",
+"s3.irw1t":"Asia-Pacific travellers' self-consumption motive for buying alcohol in travel retail jumped from 45% in 2024 to 57% in 2025 (+12ppt); globally, personal use takes 56% of duty-free purchases with gifting at 23%.",
+"s3.irw1s":"Shift the narrative from gift-box-first to self-reward — small formats, discovery and tastings lead; save gifting stories for the Qixi and World Cup windows.",
+"s3.irw2h":"TREX buyers respond to discovery-led promotions",
+"s3.irw2t":"60% of TREX shoppers engage with promotions (vs 36% of non-TREX) and build larger baskets across liquor and other categories; promotions are discovery opportunities rather than discounts, and around 75% decide before entering the store.",
+"s3.irw2s":"Pair TREX bottlings — Hibiki 12 TREX, City Labels — with discovery-led mechanics such as tastings and limited sets; competing on price misses this shopper.",
 "s4.h":"Platforms & Search: Seed Online, Redeem in Store",
 "s4.sub":"OTA bookings, search heat and the social top five.",
 "s4.st1l":"Fliggy outbound package bookings (summer)","s4.st1n":"Hong Kong among top-5 destinations",
@@ -1182,6 +1246,25 @@ reg("sc",{
 "s3.swb":"产品双轨：家庭装／多件优惠承接亲子客，小规格、具打卡属性的即兴SKU承接Z世代。门店开旅行妆容课、调香工作坊，把购物变成行程一站——停留时间就是客单价。",
 "s3.swh":"产品三路并行：亲子房＋研学套票、绑定演出日历的Z世代档期定价、适老配置的定制小团。适老硬件（防滑、紧急呼叫、低楼层）转化率高出58%，是可直接收溢价的投资。",
 "s3.sww":"送礼场景锁定家庭客与银发客，养生、珍藏叙事同样适用酒类礼盒；轻量便携及城市限定瓶迎合Z世代即兴、可打卡的购买决策。",
+"s3.ir.h.beauty":"美妆消费研究","s3.ir.h.hotel":"住宿消费研究","s3.ir.h.ws":"酒类消费研究",
+"s3.irb1h":"美妆稳居免税首选，社媒直接驱动机场转化",
+"s3.irb1t":"62.1%的内地出境旅客拟购买美妆，居免税品类之首；68.3%在社媒看到推广后会于机场购买；98%至少偶尔与电商比价、78%重视店员协助——未购买主因是缺货（62.6%）与价格（55.3%）。",
+"s3.irb1s":"种草—转化路径清晰：小红书负责研究、机场负责成交，决胜点是现货与即场价格证明，而非购买意愿。",
+"s3.irb2h":"TREX独家品买家是美妆购买主力",
+"s3.irb2t":"旅游零售独家品（TREX）买家贡献护肤74%、彩妆67%、香水63%的购买，约75%属首次购买；此客群更年轻、更富裕，重视独家与新品多于价格。",
+"s3.irb2s":"独家／首发SKU是美妆旅游零售的转化引擎，直接支撑香港「独家＋正价信任」的差异化定位。",
+"s3.irh1h":"代际分层：80、90后才是高端房客",
+"s3.irh1t":"90后偏爱国际中高端品牌（希尔顿、洲际），80后钟情高端豪华（丽思卡尔顿），00后选经济型连锁；选房因素中「床品舒适度」以76.2%居首（有效样本1,628人）。",
+"s3.irh1s":"高端酒店的目标客是80、90后而非00后；卖点排序应是睡眠体验先于设计感。",
+"s3.irh2h":"住宿需求向「体验型」倾斜","s3.irh2v":"体验型",
+"s3.irh2t":"「有机农场」「骑马射箭」「出海捕鱼」等体验型关键词搜索增速领先，「行李托运」「值机选座」等便利型服务同列增长前茅——住宿正由单一房晚升级为一体化服务方案。",
+"s3.irh2s":"房晚以外的「体验＋便利」加购项才是增量客单来源——亲子研学、体验工作坊都应做成可预订SKU。",
+"s3.irw1h":"买酒动机急转「自饮」，送礼退居第二",
+"s3.irw1t":"亚太旅客在旅游零售购买酒类的「自饮」动机由2024年45%升至2025年57%（+12个百分点）；全球免税购买中自用占56%、送礼占23%。",
+"s3.irw1s":"货盘叙事应由「礼盒优先」转向「自我奖赏」——小容量、尝新与品鉴体验先行，送礼留待七夕、世界杯档期精准投放。",
+"s3.irw2h":"TREX买家吃「发现式」促销",
+"s3.irw2t":"60%的TREX买家会参与促销（非TREX买家36%），并在酒类等品类产生更大买篮；促销对他们是发现新品的机会而非减价，约75%入店前已有购买决定。",
+"s3.irw2s":"响12、City Labels等TREX酒款应配品鉴、限定套装等「发现式」促销——单纯斗价反而错位。",
 "s4.h":"平台及搜索：先种草，后提货",
 "s4.sub":"OTA预订、搜索热度及社媒热话Top 5。",
 "s4.st1l":"飞猪出境线路游预订（暑期）","s4.st1n":"香港列五大热门目的地",
@@ -1657,7 +1740,7 @@ document.querySelectorAll("sup.ref a").forEach(function(a,i){
 // external reference links: new tab + noopener
 document.querySelectorAll("ol.refs a[href^='http']").forEach(function(a){a.target="_blank";a.rel="noopener";});
 // "read original" links on brand-radar timeline items & voices cards (primary URL from first cited ref)
-[].slice.call(document.querySelectorAll("#s5 .tl li")).concat([].slice.call(document.querySelectorAll("#voices .pcard"))).forEach(function(item){
+[].slice.call(document.querySelectorAll("#s5 .tl li")).concat([].slice.call(document.querySelectorAll("#voices .pcard"))).concat([].slice.call(document.querySelectorAll("#s3 .ir-grid .pcard"))).forEach(function(item){
   var cite=item.querySelector("sup.ref a"); if(!cite) return;
   var href=cite.getAttribute("href")||"";
   var refLi=href.charAt(0)==="#"?document.getElementById(href.slice(1)):null; if(!refLi) return;
